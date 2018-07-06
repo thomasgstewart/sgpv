@@ -1,0 +1,10 @@
+Package: sgpv
+Title: Second generation p-values
+Version: 0.0.0.9000
+Authors@R: person("Jeffrey", "Blume", email = "j.blume@vanderbilt.edu", role = c("aut", "cre"))
+Description: Implements methods described in the seminal work: Blume JD, D’Agostino McGowan L, Dupont WD, Greevy RA Jr (2018) Second-generation p-values: Improved rigor, reproducibility, & transparency in statistical analyses. PLoS ONE 13(3): e0188299. https://doi.org/10.1371/journal.pone.0188299
+Depends: R
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1.9000
