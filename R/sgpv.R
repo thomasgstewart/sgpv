@@ -21,9 +21,9 @@ sgpv <- function(data, estimate_lb = 1, estimate_ub = 2, null_lb = 3, null_ub = 
     as.data.table %>% 
     `[`(, c(estimate_lb, estimate_ub, null_lb, null_ub), with = FALSE) %>% 
     setnames(col_names)
-  
+
   dt[, `:=`("case" = NA_real_, "p_delta" = NA_real_, "delta_gap" = NA_real_)]
-  
+  browser()  
   
   # CASE 1: Has NAs
   dt[, case := is.na(.SD) %>% rowSums %>% `>`(0) %>% `*`(1), .SDcols = col_names]
