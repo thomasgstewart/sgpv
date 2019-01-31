@@ -4,8 +4,8 @@
 \alias{sgpv}
 \title{Second Generation p-values}
 \usage{
-sgpv(data, estimate_lb = 1, estimate_ub = 2, null_lb = 3, null_ub = 4,
-  epsilon = 1e-05)
+sgpv(data, estimate_lb = 1, estimate_ub = 2, null_lb = 3,
+  null_ub = 4, epsilon = 1e-05)
 }
 \arguments{
 \item{data}{A data.frame or data.table which includes interval bounds for the estimate and the null region.}

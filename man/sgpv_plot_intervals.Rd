@@ -4,9 +4,9 @@
 \alias{sgpv_plot_intervals}
 \title{Plot intervals}
 \usage{
-sgpv_plot_intervals(data, estimate_lb = 1, estimate_ub = 2, null_lb = 3,
-  null_ub = 4, yvar = NULL, shift = 0, est_col = "#d7191c80",
-  null_col = "#2c7bb680")
+sgpv_plot_intervals(data, estimate_lb = 1, estimate_ub = 2,
+  null_lb = 3, null_ub = 4, yvar = NULL, shift = 0,
+  est_col = "#d7191c80", null_col = "#2c7bb680")
 }
 \arguments{
 \item{data}{A data.frame or data.table which includes interval bounds for the estimate and the null region.}

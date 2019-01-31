@@ -74,12 +74,12 @@ sgpv <- function(data, estimate_lb = 1, estimate_ub = 2, null_lb = 3, null_ub = 
       ### CASE 3.41:
       ### E      [-----]
       ### N   [-----]
-      dt[case == 3.4 & (nl <= el) & (nu <= eu), `:=`("p_delta" = (nu - el)/denom, "delta_gap" = 0, "case" = 3.41)]
+      dt[case == 3.4 & (nl <= el) & (el <= nu) & (nu <= eu), `:=`("p_delta" = (nu - el)/denom, "delta_gap" = 0, "case" = 3.41)]
       
       ### CASE 3.42:
       ### E   [-----]
       ### N      [-----]
-      dt[case == 3.4 & (el <= nl) & (eu <= nu), `:=`("p_delta" = (eu - nl)/denom, "delta_gap" = 0, "case" = 3.42)]
+      dt[case == 3.4 & (el <= nl) & (nl <= eu) & (eu <= nu), `:=`("p_delta" = (eu - nl)/denom, "delta_gap" = 0, "case" = 3.42)]
       
       ### CASE 3.43:
       ### E            [-----]
